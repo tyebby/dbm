@@ -80,3 +80,20 @@ CREATE TABLE Shippers (
     Phone VARCHAR(50) 
 
 ); 
+CREATE TABLE Suppliers ( 
+
+    SupplierID INT PRIMARY KEY, 
+
+    SupplierName VARCHAR(255), 
+
+    ContactName VARCHAR(255), 
+
+    Address VARCHAR(255), 
+
+    City VARCHAR(100), 
+
+    PostalCode VARCHAR(50), 
+
+    Country VARCHAR(100), 
+
+    Phone VARCHAR(50) 
