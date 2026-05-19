@@ -18,3 +18,10 @@ CREATE TABLE Customers (
     Country VARCHAR(100) 
 
 ); 
+CREATE TABLE Categories ( 
+
+    CategoryID INT PRIMARY KEY, 
+
+    CategoryName VARCHAR(255), 
+
+    Description TEXT
