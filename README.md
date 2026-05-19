@@ -49,3 +49,12 @@ CREATE TABLE OrderDetails (
     Quantity INT 
 
 ); 
+CREATE TABLE OrderDetails ( 
+
+    OrderDetailID INT PRIMARY KEY, 
+
+    OrderID INT, 
+
+    ProductID INT, 
+
+    Quantity INT 
