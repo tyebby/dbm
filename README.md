@@ -25,3 +25,16 @@ CREATE TABLE Categories (
     CategoryName VARCHAR(255), 
 
     Description TEXT
+CREATE TABLE Employees ( 
+
+    EmployeeID INT PRIMARY KEY, 
+
+    LastName VARCHAR(255), 
+
+    FirstName VARCHAR(255), 
+
+    BirthDate DATE, 
+
+    Photo VARCHAR(255), 
+
+    Notes TEXT 
