@@ -1,99 +1,51 @@
-Select the database : 
+Insert into Categories 
 
-Use Boitumelo_240757610; 
-CREATE TABLE Customers ( 
+INSERT INTO Categories VALUES 
+(1, 'Beverages', 'Soft drinks'), 
+(2, 'Condiments', 'Sweet and savory sauces'); 
+Insert into Customers 
 
-    CustomerID INT PRIMARY KEY, 
+INSERT INTO Customers VALUES 
+(1, 'Alfreds Futterkiste', 'Maria Anders', 
+'Obere Str. 57', 'Berlin', '12209', 'Germany'), 
+ 
+(2, 'Ana Trujillo Emparedados y helados', 
+'Ana Trujillo', 'Avda. de la Constitución 2222', 
+'Mexico D.F.', '05021', 'Mexico'); 
 
-    CustomerName VARCHAR(255), 
+INSERT INTO Employees VALUES 
+(1, 'Davolio', 'Nancy', '1968-12-08', 
+'EmpID1.pic', 'Sales Representative'), 
+ 
+(2, 'Fuller', 'Andrew', '1952-02-19', 
+'EmpID2.pic', 'Vice President'); 
 
-    ContactName VARCHAR(255), 
+ NSERT INTO Shippers VALUES 
+(1, 'Speedy Express', '(503) 555-9831'), 
+ 
+(2, 'United Package', '(503) 555-3199'); 
+INSERT INTO Suppliers VALUES 
+(1, 'Exotic Liquid', 'Charlotte Cooper', 
+'49 Gilbert St.', 'London', 'EC1 4SD', 
+'UK', '(171) 555-2222'), 
+ 
+(2, 'New Orleans Cajun Delights', 
+'Shelley Burke', 'P.O. Box 78934', 
+'New Orleans', '70117', 'USA', 
+'(100) 555-4822'); 
+ INSERT INTO Products VALUES 
+(1, 'Chais', 1, 1, 
+'10 boxes x 20 bags', 18.00), 
+ 
+(2, 'Chang', 1, 1, 
+'24 - 12 oz bottles', 19.00);
 
-    Address VARCHAR(255), 
+INSERT INTO Orders VALUES 
+(10248, 1, 1, '2024-01-10', 1), 
+ 
+(10249, 2, 2, '2024-01-11', 2); 
 
-    City VARCHAR(100), 
-
-    PostalCode VARCHAR(20), 
-
-    Country VARCHAR(100) 
-
-); 
-CREATE TABLE Categories ( 
-
-    CategoryID INT PRIMARY KEY, 
-
-    CategoryName VARCHAR(255), 
-
-    Description TEXT
-CREATE TABLE Employees ( 
-
-    EmployeeID INT PRIMARY KEY, 
-
-    LastName VARCHAR(255), 
-
-    FirstName VARCHAR(255), 
-
-    BirthDate DATE, 
-
-    Photo VARCHAR(255), 
-
-    Notes TEXT 
-CREATE TABLE OrderDetails ( 
-
-    OrderDetailID INT PRIMARY KEY, 
-
-    OrderID INT, 
-
-    ProductID INT, 
-
-    Quantity INT 
-
-); 
-CREATE TABLE OrderDetails ( 
-
-    OrderDetailID INT PRIMARY KEY, 
-
-    OrderID INT, 
-
-    ProductID INT, 
-
-    Quantity INT 
-CREATE TABLE Products ( 
-
-    ProductID INT PRIMARY KEY, 
-
-    ProductName VARCHAR(255), 
-
-    SupplierID INT, 
-
-    CategoryID INT, 
-
-    Unit VARCHAR(255), 
-
-    Price DECIMAL(10,2) 
-CREATE TABLE Shippers ( 
-
-    ShipperID INT PRIMARY KEY, 
-
-    ShipperName VARCHAR(255), 
-
-    Phone VARCHAR(50) 
-
-); 
-CREATE TABLE Suppliers ( 
-
-    SupplierID INT PRIMARY KEY, 
-
-    SupplierName VARCHAR(255), 
-
-    ContactName VARCHAR(255), 
-
-    Address VARCHAR(255), 
-
-    City VARCHAR(100), 
-
-    PostalCode VARCHAR(50), 
-
-    Country VARCHAR(100), 
-
-    Phone VARCHAR(50) 
+INSERT INTO OrderDetails VALUES 
+(1, 10248, 1, 12), 
+ 
+(2, 10249, 2, 10);  
