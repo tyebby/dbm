@@ -38,3 +38,14 @@ CREATE TABLE Employees (
     Photo VARCHAR(255), 
 
     Notes TEXT 
+CREATE TABLE OrderDetails ( 
+
+    OrderDetailID INT PRIMARY KEY, 
+
+    OrderID INT, 
+
+    ProductID INT, 
+
+    Quantity INT 
+
+); 
