@@ -71,3 +71,12 @@ CREATE TABLE Products (
     Unit VARCHAR(255), 
 
     Price DECIMAL(10,2) 
+CREATE TABLE Shippers ( 
+
+    ShipperID INT PRIMARY KEY, 
+
+    ShipperName VARCHAR(255), 
+
+    Phone VARCHAR(50) 
+
+); 
